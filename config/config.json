@@ -24,12 +24,12 @@
             "username": "O6ERdDuwU8Ym3RPAueulsAkfmRWAJiDHBbRvlCQp"
         },
         {
-            "platform": "LogitechHarmony",
-            "name": "Living Room Harmony Hub"
+            "platform": "HarmonyHub",
+            "name": "Basement Harmony Hub"
         },
         {
             "platform": "YamahaAVR",
-            "play_volume": -35,
+            "play_volume": -48,
             "setMainInputTo": "AirPlay" 
         }
     ],
@@ -37,10 +37,10 @@
     "accessories": [
         {
             "accessory": "Lockitron",
-            "name": "Front Door",
+            "name": "Vritual Lock",
             "description": "This shim supports Lockitron locks. It uses the Lockitron cloud API, so the Lockitron must be 'awake' for locking and unlocking to actually happen. You can wake up Lockitron after issuing an lock/unlock command by knocking on the door.",
-            "lock_id": "your-lock-id",
-            "api_token" : "your-lockitron-api-access-token"
+            "lock_id": "DTBXJ-KRBTU-XCSWL-BSQHMXR",
+            "api_token" : "ee108b2e797a6fdd8e81828ae6a940862e1f1604584ecd15a8ea40731cd4777d"
         }
     ]
 }

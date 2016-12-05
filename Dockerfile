@@ -29,6 +29,9 @@ RUN npm install -g homebridge --unsafe-perm
 # depending on your config.json you have to add your modules here!
 RUN npm install -g homebridge-smartthings --unsafe-perm
 RUN npm install -g homebridge-philipshue --unsafe-perm
+RUN npm install -g homebridge-harmonyhub --unsafe-perm
+RUN npm install -g homebridge-yamaha --unsafe-perm
+RUN npm install -g homebridge-lockitron --unsafe-perm
 #RUN npm install -g homebridge-ninjablock-temperature --unsafe-perm
 #RUN npm install -g homebridge-ninjablock-humidity --unsafe-perm
 #RUN npm install -g homebridge-ninjablock-alarmstatedevice --unsafe-perm
