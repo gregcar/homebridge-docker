@@ -1,0 +1,46 @@
+{
+    "bridge": {
+        "name": "Homebridge",
+        "username": "CC:22:3D:E3:CE:30",
+        "port": 51826,
+        "pin": "031-45-154"
+    },
+    
+    "description": "This is an example configuration file with all supported devices. You can use this as a template for creating your own configuration file containing devices you actually own.",
+
+    "platforms": [
+        {
+            "platform": "homebridge-smartthings.SmartThings",
+            "name": "SmartThings",
+            "app_url": "https://graph.api.smartthings.com:443/api/smartapps/installations/",
+            "app_id": "298264f2-4820-4829-8e38-1c2cac0c2afa",
+            "access_token": "74ac464b-7939-44a6-85b9-c6b16e56dcb9",
+            "polling_seconds": 600,
+            "update_seconds": 1
+        },
+        {
+            "platform": "PhilipsHue",
+            "name": "Phillips Hue",
+            "username": "O6ERdDuwU8Ym3RPAueulsAkfmRWAJiDHBbRvlCQp"
+        },
+        {
+            "platform": "LogitechHarmony",
+            "name": "Living Room Harmony Hub"
+        },
+        {
+            "platform": "YamahaAVR",
+            "play_volume": -35,
+            "setMainInputTo": "AirPlay" 
+        }
+    ],
+
+    "accessories": [
+        {
+            "accessory": "Lockitron",
+            "name": "Front Door",
+            "description": "This shim supports Lockitron locks. It uses the Lockitron cloud API, so the Lockitron must be 'awake' for locking and unlocking to actually happen. You can wake up Lockitron after issuing an lock/unlock command by knocking on the door.",
+            "lock_id": "your-lock-id",
+            "api_token" : "your-lockitron-api-access-token"
+        }
+    ]
+}
