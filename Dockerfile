@@ -20,6 +20,7 @@ RUN apt-get install -y locales
 RUN apt-get install -y avahi-utils
 RUN apt-get install -y curl wget git python build-essential make g++ libavahi-compat-libdnssd-dev libkrb5-dev vim net-tools nano
 RUN alias ll='ls -alG'
+RUN mv /sbin/dhclient /usr/sbin/dhclient
 
 ##################################################
 # Install homebridge                             #
